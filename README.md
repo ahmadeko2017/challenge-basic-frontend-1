@@ -1,21 +1,71 @@
-# Challenge Basic Front-End 1
+# Challenge Basic Frontend 1 - Landing Page
 
-HTML, CSS, dan JavaScript adalah fondasi utama dalam web development. Lewat tiga hal ini, kamu bisa melihat dan berinteraksi dengan berbagai tampilan di browser. 
+Landing page interaktif untuk showcase 5 tugas frontend challenge dengan React, Vite, dan Tailwind CSS.
 
-Tanpa pemahaman yang kuat soal ketiganya, proses berkembang sebagai web developer bakal terasa lebih berat, apalagi kalau goal kamu mau kerja remote di perusahaan luar negeri.
+## 🚀 Quick Start
 
-Di challenge ini, ada 5 tugas yang perlu kamu selesaikan:
+```bash
+# Install dependencies
+npm install
 
-- [Tugas 1](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
-- [Tugas 2](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS)
-- [Tugas 3](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa)
-- [Tugas 4](https://www.frontendmentor.io/challenges/typing-speed-test)
-- [Tugas 5](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3)
+# Run development server
+npm run dev
 
-Supaya challenge ini bisa kamu kerjakan dengan lancar, ikuti instruksi berikut:
+# Build for production
+npm run build
 
-1. Fork repository ini.
-2. Kerjakan Tugas 1 sampai Tugas 5. Kamu boleh menggunakan tools apapun untuk get the jobs done. Hanya saja untuk styling kami merekomendasikan kamu untuk pakai [Tailwind CSS](https://tailwindcss.com/).
-3. Setiap kali kamu selesai mengerjakan satu tugas, simpan hasilnya di folder yang sudah disediakan.
-4. Deploy repository hasil fork kamu ke GitHub Pages. Tujuannya supaya web yang kamu buat bisa langsung dipublish dan diakses secara online.
-5. Isi [formulir ini](https://forms.gle/gvcWyg15zpL1S2B66) untuk menandakan kamu sudah selesai mengerjakan challenge ini.
+# Preview production build
+npm run preview
+```
+
+## 📝 Edit Project Data
+
+Edit `public/data.json` untuk mengubah informasi project (tingkat kesulitan, durasi, deskripsi, dll).
+
+## 🌐 Live Demo
+
+Development: http://localhost:5173/
+Production: https://ahmadeko2017.github.io/challenge-basic-frontend-1/
+
+## 📚 Documentation
+
+Lihat [walkthrough.md](C:\Users\Paylabs\.gemini\antigravity\brain\a326bd5f-d35c-4efd-a3af-d81976530dd9\walkthrough.md) untuk dokumentasi lengkap.
+
+## 🎨 Features
+
+- ✅ Mobile-first responsive design
+- ✅ Interactive project cards dengan glassmorphism effect
+- ✅ Modal dengan live preview (iframe)
+- ✅ Smooth animations & transitions
+- ✅ Editable data via JSON
+- ✅ Dark theme dengan gradient colors
+- ✅ SEO optimized
+
+## 🛠️ Tech Stack
+
+- React 19
+- Vite 7.3.0
+- Tailwind CSS 4.x
+- PostCSS
+- Google Fonts (Inter)
+
+## 📦 Deployment
+
+### GitHub Pages
+
+```bash
+# Install gh-pages
+npm install -D gh-pages
+
+# Add deploy script to package.json
+"scripts": {
+  "deploy": "npm run build && gh-pages -d dist"
+}
+
+# Deploy
+npm run deploy
+```
+
+## 📄 License
+
+Open source - available for learning purposes.
