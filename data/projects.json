@@ -1,0 +1,89 @@
+[
+  {
+    "id": 1,
+    "title": "QR Code Component",
+    "description": "Komponen QR code sederhana dengan design card yang clean dan modern. Perfect untuk pemula yang ingin belajar HTML & CSS dasar.",
+    "difficulty": "Beginner",
+    "difficultyLevel": 1,
+    "duration": "2 jam",
+    "tags": ["HTML", "CSS", "Responsive"],
+    "liveUrl": "https://ahmadeko2017.github.io/challenge-basic-frontend-1/tugas-1",
+    "thumbnail": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%231e293b' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='60' fill='%2310b981'%3E🟢%3C/text%3E%3Ctext x='50%25' y='70%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='%2394a3b8'%3ETugas 1%3C/text%3E%3C/svg%3E",
+    "features": [
+      "Responsive design",
+      "Clean UI",
+      "Semantic HTML",
+      "CSS Flexbox"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Blog Preview Card",
+    "description": "Card preview untuk blog post dengan hover effects dan typography yang baik. Belajar tentang spacing, colors, dan interactive states.",
+    "difficulty": "Beginner",
+    "difficultyLevel": 1,
+    "duration": "2.5 jam",
+    "tags": ["HTML", "CSS", "Hover Effects"],
+    "liveUrl": "https://ahmadeko2017.github.io/challenge-basic-frontend-1/tugas-2",
+    "thumbnail": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%231e293b' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='60' fill='%2310b981'%3E🟢%3C/text%3E%3Ctext x='50%25' y='70%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='%2394a3b8'%3ETugas 2%3C/text%3E%3C/svg%3E",
+    "features": [
+      "Interactive hover states",
+      "Typography hierarchy",
+      "Card layout",
+      "CSS transitions"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Product Preview Card",
+    "description": "Card component untuk preview produk e-commerce dengan layout yang menarik. Implementasi two-column layout dan responsive images.",
+    "difficulty": "Beginner",
+    "difficultyLevel": 1,
+    "duration": "3 jam",
+    "tags": ["HTML", "CSS", "Flexbox"],
+    "liveUrl": "https://ahmadeko2017.github.io/challenge-basic-frontend-1/tugas-3",
+    "thumbnail": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%231e293b' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='60' fill='%2310b981'%3E🟢%3C/text%3E%3Ctext x='50%25' y='70%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='%2394a3b8'%3ETugas 3%3C/text%3E%3C/svg%3E",
+    "features": [
+      "Two-column layout",
+      "Image optimization",
+      "Button interactions",
+      "Mobile-first design"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Typing Speed Test",
+    "description": "Aplikasi interaktif untuk mengukur kecepatan mengetik dengan real-time feedback. Belajar DOM manipulation dan event handling.",
+    "difficulty": "Intermediate",
+    "difficultyLevel": 2,
+    "duration": "6 jam",
+    "tags": ["HTML", "CSS", "JavaScript", "DOM"],
+    "liveUrl": "https://ahmadeko2017.github.io/challenge-basic-frontend-1/tugas-4",
+    "thumbnail": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%231e293b' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='60' fill='%23eab308'%3E🟡%3C/text%3E%3Ctext x='50%25' y='70%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='%2394a3b8'%3ETugas 4%3C/text%3E%3C/svg%3E",
+    "features": [
+      "Real-time typing detection",
+      "WPM calculation",
+      "Accuracy tracking",
+      "Timer functionality",
+      "Event listeners"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Space Tourism Website",
+    "description": "Multi-page website dengan navigasi kompleks, animations, dan design yang sophisticated. Challenge terberat untuk menguji skill frontend.",
+    "difficulty": "Advanced",
+    "difficultyLevel": 3,
+    "duration": "12 jam",
+    "tags": ["HTML", "CSS", "JavaScript", "Multi-page"],
+    "liveUrl": "https://ahmadeko2017.github.io/challenge-basic-frontend-1/tugas-5",
+    "thumbnail": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%231e293b' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='60' fill='%23ef4444'%3E🔴%3C/text%3E%3Ctext x='50%25' y='70%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='%2394a3b8'%3ETugas 5%3C/text%3E%3C/svg%3E",
+    "features": [
+      "Multi-page navigation",
+      "Tab components",
+      "Complex animations",
+      "Data-driven content",
+      "Advanced CSS"
+    ]
+  }
+]

@@ -1,17 +1,191 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="/challenge-basic-frontend-1/tugas-5/assets/favicon-32x32.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Frontend Mentor | Space Tourism Website</title>
-  <script type="module" crossorigin src="/challenge-basic-frontend-1/tugas-5/assets/index-Cgwrbpk3.js"></script>
-  <link rel="stylesheet" crossorigin href="/challenge-basic-frontend-1/tugas-5/assets/index-mLlKxOLa.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing page untuk 5 challenge frontend dari beginner hingga advanced level">
+    <title>Challenge Basic Frontend 1 | Portfolio Projects</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <div id="root"></div>
-</body>
+    <!-- Loading Spinner -->
+    <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>Loading projects...</p>
+    </div>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="badge">
+                <span class="badge-dot"></span>
+                <span>5 Frontend Challenges • Ready to Start</span>
+            </div>
+            
+            <h1 class="hero-title">
+                Challenge Basic
+                <span class="gradient-text">Frontend 1</span>
+            </h1>
+            
+            <p class="hero-description">
+                Tingkatkan skill <strong>HTML, CSS, dan JavaScript</strong> Anda melalui 5 project challenge yang dirancang khusus untuk web developer.
+                <span class="sub-text">Dari beginner hingga advanced level.</span>
+            </p>
+            
+            <div class="hero-cta">
+                <button class="btn-primary" onclick="scrollToProjects()">
+                    Lihat Projects
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <a href="https://github.com/ahmadeko2017/challenge-basic-frontend-1" target="_blank" class="btn-secondary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                    View on GitHub
+                </a>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-number gradient-text">5</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number gradient-text">3</div>
+                    <div class="stat-label">Levels</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number gradient-text">25+</div>
+                    <div class="stat-label">Hours</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-header">
+            <div class="section-badge">Portfolio Showcase</div>
+            <h2 class="section-title">
+                <span class="gradient-text">Challenge Projects</span>
+            </h2>
+            <p class="section-description">
+                5 tugas frontend dari <strong>basic hingga advanced</strong>.
+                <span class="sub-text">Setiap project dirancang untuk meningkatkan skill HTML, CSS, dan JavaScript Anda.</span>
+            </p>
+        </div>
+        
+        <div id="projects-grid" class="projects-grid">
+            <!-- Projects will be loaded here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3 class="gradient-text">Challenge Basic Frontend 1</h3>
+                <p>Built with HTML + CSS + JavaScript</p>
+            </div>
+            
+            <div class="footer-center">
+                <a href="https://github.com/ahmadeko2017/challenge-basic-frontend-1" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.frontendmentor.io" target="_blank">Frontend Mentor</a>
+            </div>
+            
+            <div class="footer-right">
+                <p>&copy; 2025 Ahmad Eko. All rights reserved.</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>Challenges from <a href="https://www.frontendmentor.io" target="_blank">Frontend Mentor</a> • Designed & Developed with ❤️</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title-group">
+                    <h2 id="modal-title"></h2>
+                    <span id="modal-badge" class="badge"></span>
+                </div>
+                <div class="modal-meta">
+                    <span id="modal-duration"></span>
+                    <span id="modal-level"></span>
+                </div>
+                <button class="modal-close" onclick="closeModal()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="modal-body">
+                <div class="modal-preview">
+                    <h3>Live Preview</h3>
+                    <div class="iframe-container">
+                        <iframe id="modal-iframe" title="Project Preview"></iframe>
+                    </div>
+                </div>
+                
+                <div class="modal-description">
+                    <h3>About This Project</h3>
+                    <p id="modal-desc"></p>
+                </div>
+                
+                <div class="modal-features">
+                    <h3>Key Features</h3>
+                    <ul id="modal-features-list"></ul>
+                </div>
+                
+                <div class="modal-tags">
+                    <h3>Tech Stack</h3>
+                    <div id="modal-tags-list"></div>
+                </div>
+                
+                <div class="modal-actions">
+                    <a id="modal-live-link" href="#" target="_blank" class="btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                        </svg>
+                        Open Live Demo
+                    </a>
+                    <button onclick="closeModal()" class="btn-secondary">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
 </html>
