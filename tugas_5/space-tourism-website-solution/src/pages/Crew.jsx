@@ -142,7 +142,7 @@ export default function Crew() {
     };
 
     return (
-        <div className="relative w-full max-w-7xl mx-auto px-6 pt-6 lg:pt-12 text-center lg:text-left h-full flex flex-col overflow-hidden">
+        <div className="relative w-full min-h-screen overflow-hidden text-center lg:text-left flex flex-col justify-center bg-transparent">
 
             {/* ========================================
                 IDLE BACKGROUND ANIMATIONS (Optimized - 3 orbs only)
@@ -196,11 +196,11 @@ export default function Crew() {
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
-                className="flex flex-col h-full"
+                className="flex flex-col h-full w-full max-w-7xl mx-auto px-6 pt-20 lg:pt-24 pb-0"
             >
                 {/* Title */}
                 <motion.h5
-                    className="text-white text-[16px] md:text-[20px] lg:text-[28px] uppercase tracking-[2.7px] md:tracking-[3.38px] lg:tracking-[4.72px] font-barlow mb-8 md:mb-16 md:text-left md:pl-10"
+                    className="text-white text-[16px] md:text-[20px] lg:text-[28px] uppercase tracking-[2.7px] md:tracking-[3.38px] lg:tracking-[4.72px] font-barlow mb-4 md:mb-8 md:text-left"
                     variants={itemVariants}
                 >
                     <span className="opacity-25 font-bold mr-4">02</span> Meet your crew
@@ -212,7 +212,7 @@ export default function Crew() {
                         CREW IMAGE with FLOATING ANIMATION
                         ======================================== */}
                     <motion.div
-                        className="w-full lg:w-1/2 flex justify-center lg:justify-end border-b border-[#383B4B] lg:border-none mt-8 lg:mt-0"
+                        className="w-full lg:w-1/2 flex justify-center lg:justify-end border-b border-[#383B4B] lg:border-none mt-4 lg:mt-0"
                         variants={itemVariants}
                     >
                         <AnimatePresence mode="wait">
@@ -246,7 +246,7 @@ export default function Crew() {
                                 <motion.img
                                     src={selectedCrew.images.png}
                                     alt={selectedCrew.name}
-                                    className="h-[223px] md:h-[572px] lg:h-[712px] object-contain relative z-10"
+                                    className="h-[223px] md:h-[400px] lg:h-[550px] object-contain relative z-10"
                                     animate={{
                                         y: [0, -10, 0],
                                     }}
@@ -268,14 +268,14 @@ export default function Crew() {
                         CONTENT SECTION
                         ======================================== */}
                     <motion.div
-                        className="flex flex-col-reverse lg:flex-col lg:w-1/2 lg:pb-24 lg:pl-10"
+                        className="flex flex-col-reverse lg:flex-col lg:w-1/2 lg:pb-12 lg:pl-10 lg:items-start"
                         variants={itemVariants}
                     >
                         {/* ========================================
                             DOT NAVIGATION with SPOTLIGHT EFFECT
                             ======================================== */}
                         <motion.div
-                            className="flex justify-center lg:justify-start gap-6 py-8 lg:py-0 lg:mt-24"
+                            className="flex justify-center lg:justify-start gap-4 lg:gap-6 py-6 lg:py-0 lg:mt-12"
                             variants={itemVariants}
                         >
                             {data.crew.map((crewMember, index) => (
@@ -289,9 +289,9 @@ export default function Crew() {
                                     whileTap="tap"
                                     onMouseMove={(e) => handleMouseMove(e, index)}
                                     aria-label={`Select ${crewMember.name}`}
-                                    className={`relative w-[15px] h-[15px] rounded-full transition-all duration-300 overflow-hidden ${selectedCrew.name === crewMember.name
-                                            ? 'bg-white shadow-lg shadow-white/50'
-                                            : 'bg-white/17 hover:bg-white/50'
+                                    className={`relative w-[12px] h-[12px] lg:w-[15px] lg:h-[15px] rounded-full transition-all duration-300 overflow-hidden ${selectedCrew.name === crewMember.name
+                                        ? 'bg-white shadow-lg shadow-white/50'
+                                        : 'bg-white/17 hover:bg-white/50'
                                         }`}
                                 >
                                     {/* Spotlight gradient overlay */}
@@ -337,7 +337,7 @@ export default function Crew() {
                                     exit="exit"
                                 >
                                     <motion.h4
-                                        className="text-white/50 font-bellefair text-[16px] md:text-[24px] lg:text-[32px] uppercase mb-2 md:mb-4 mt-8 md:mt-12 lg:mt-0"
+                                        className="text-white/50 font-bellefair text-[16px] md:text-[24px] lg:text-[32px] uppercase mb-2 md:mb-4 mt-6 md:mt-10 lg:mt-0"
                                         initial={{ opacity: 0, y: 10 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         transition={{ delay: 0.1 }}
@@ -355,7 +355,7 @@ export default function Crew() {
                                     </motion.h3>
 
                                     <motion.p
-                                        className="text-secondary font-barlow text-[15px] md:text-[16px] lg:text-[18px] leading-relaxed max-w-lg mx-auto lg:mx-0 min-h-[100px] lg:min-h-[160px]"
+                                        className="text-secondary font-barlow text-[15px] md:text-[16px] lg:text-[18px] leading-relaxed max-w-lg mx-auto lg:mx-0 min-h-[80px] lg:min-h-[140px]"
                                         initial={{ opacity: 0, y: 10 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         transition={{ delay: 0.3 }}

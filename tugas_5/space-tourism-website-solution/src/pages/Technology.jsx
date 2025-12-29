@@ -129,7 +129,7 @@ export default function Technology() {
     };
 
     return (
-        <div className="relative min-h-screen overflow-hidden">
+        <div className="relative min-h-screen overflow-hidden flex flex-col">
             {/* ========================================
                 IDLE BACKGROUND ANIMATIONS
                 ======================================== */}
@@ -176,24 +176,26 @@ export default function Technology() {
             />
 
             {/* Main Content */}
-            <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pt-6 lg:pt-12 text-center lg:text-left h-full flex flex-col">
-                {/* Title with entrance animation */}
-                <motion.h5
-                    className="text-white text-[16px] md:text-[20px] lg:text-[28px] uppercase tracking-[2.7px] md:tracking-[3.38px] lg:tracking-[4.72px] font-barlow mb-8 md:mb-16 md:text-left md:pl-10"
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6 }}
-                >
-                    <span className="opacity-25 font-bold mr-4">03</span> SPACE LAUNCH 101
-                </motion.h5>
+            <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pt-20 pb-4 lg:pt-24 text-center lg:text-left flex flex-col h-screen">
+                {/* Title with entrance animation - Fixed height area */}
+                <div className="flex-none">
+                    <motion.h5
+                        className="text-white text-[16px] md:text-[20px] lg:text-[24px] uppercase tracking-[2.7px] md:tracking-[3.38px] lg:tracking-[4.72px] font-barlow mb-4 md:mb-8 lg:pl-10"
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <span className="opacity-25 font-bold mr-4">03</span> SPACE LAUNCH 101
+                    </motion.h5>
+                </div>
 
-                <div className="flex flex-col-reverse lg:flex-row lg:items-center lg:justify-between w-full flex-grow">
+                <div className="flex flex-col-reverse lg:flex-row lg:items-center lg:justify-between w-full flex-grow overflow-hidden">
 
                     {/* ========================================
                         LEFT: Navigation + Content
                         ======================================== */}
                     <motion.div
-                        className="flex flex-col lg:flex-row items-center lg:items-start lg:pl-10 lg:gap-12"
+                        className="flex flex-col lg:flex-row items-center lg:items-center lg:justify-start lg:pl-10 lg:gap-12 flex-1 pt-4 lg:pt-0"
                         variants={containerVariants}
                         initial="hidden"
                         animate="visible"
@@ -202,7 +204,7 @@ export default function Technology() {
                             NUMBER NAVIGATION with SPOTLIGHT EFFECT
                             ======================================== */}
                         <motion.div
-                            className="flex flex-row lg:flex-col gap-4 mb-8 lg:mb-0"
+                            className="flex flex-row lg:flex-col gap-4 mb-6 lg:mb-0"
                             variants={itemVariants}
                         >
                             {data.technology.map((_, index) => (
@@ -215,9 +217,9 @@ export default function Technology() {
                                     whileHover="hover"
                                     whileTap="tap"
                                     onMouseMove={(e) => handleMouseMove(e, index)}
-                                    className={`relative w-12 h-12 md:w-20 md:h-20 lg:w-20 lg:h-20 rounded-full border-2 text-base md:text-2xl lg:text-2xl font-bellefair transition-all duration-300 overflow-hidden ${selectedIndex === index
-                                            ? 'bg-white text-black border-white shadow-2xl shadow-white/50'
-                                            : 'bg-transparent text-white border-white/25 hover:border-white'
+                                    className={`relative w-10 h-10 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full border-2 text-base md:text-xl lg:text-2xl font-bellefair transition-all duration-300 overflow-hidden flex items-center justify-center ${selectedIndex === index
+                                        ? 'bg-white text-black border-white shadow-2xl shadow-white/50'
+                                        : 'bg-transparent text-white border-white/25 hover:border-white'
                                         }`}
                                     aria-label={`View ${data.technology[index].name}`}
                                 >
@@ -260,7 +262,7 @@ export default function Technology() {
                                     exit="exit"
                                 >
                                     <motion.p
-                                        className="text-secondary text-sm md:text-base tracking-widest mb-2 md:mb-4 uppercase"
+                                        className="text-secondary text-sm md:text-base tracking-widest mb-1 md:mb-2 uppercase"
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: 1 }}
                                         transition={{ delay: 0.1 }}
@@ -269,7 +271,7 @@ export default function Technology() {
                                     </motion.p>
 
                                     <motion.h3
-                                        className="text-white font-bellefair text-[24px] md:text-[40px] lg:text-[56px] uppercase mb-4 md:mb-6"
+                                        className="text-white font-bellefair text-[24px] md:text-[40px] lg:text-[48px] uppercase mb-2 md:mb-4"
                                         initial={{ opacity: 0, y: 10 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         transition={{ delay: 0.2 }}
@@ -278,7 +280,7 @@ export default function Technology() {
                                     </motion.h3>
 
                                     <motion.p
-                                        className="text-secondary font-barlow text-[15px] md:text-[16px] lg:text-[18px] leading-relaxed"
+                                        className="text-secondary font-barlow text-[14px] md:text-[15px] lg:text-[16px] leading-relaxed"
                                         initial={{ opacity: 0, y: 10 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         transition={{ delay: 0.3 }}
@@ -294,10 +296,11 @@ export default function Technology() {
                         RIGHT: Image with BLUR TRANSITION
                         ======================================== */}
                     <motion.div
-                        className="mb-8 lg:mb-0 w-full lg:w-auto"
+                        className="w-full lg:w-auto flex-1 lg:flex-none flex items-center justify-center lg:justify-end lg:h-full lg:absolute lg:right-0 lg:top-0 lg:bottom-0"
                         variants={itemVariants}
                         initial="hidden"
                         animate="visible"
+                        style={{ right: 0 }}
                     >
                         <AnimatePresence mode="wait">
                             <motion.picture
@@ -306,6 +309,7 @@ export default function Technology() {
                                 initial="enter"
                                 animate="center"
                                 exit="exit"
+                                className="w-full lg:h-full lg:w-auto flex items-center"
                             >
                                 <source
                                     media="(min-width: 1024px)"
@@ -314,7 +318,7 @@ export default function Technology() {
                                 <motion.img
                                     src={technology.images.landscape}
                                     alt={technology.name}
-                                    className="w-full lg:w-auto lg:h-[527px] object-cover rounded-lg"
+                                    className="w-full h-[150px] md:h-[250px] lg:h-[400px] xl:h-[450px] object-cover lg:object-contain rounded-none lg:rounded-l-lg"
                                     whileHover={{ scale: 1.02 }}
                                     transition={{ duration: 0.3 }}
                                 />

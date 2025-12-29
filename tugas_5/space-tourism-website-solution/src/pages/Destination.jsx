@@ -145,7 +145,7 @@ export default function Destination() {
     };
 
     return (
-        <div className="relative w-full max-w-7xl mx-auto px-6 pt-6 pb-12 lg:pt-12 text-center lg:text-left overflow-hidden">
+        <div className="relative w-full px-6 pt-24 lg:pt-32 pb-24 lg:pb-32 min-h-screen text-center lg:text-left overflow-hidden flex flex-col justify-center">
 
             {/* ========================================
                 IDLE BACKGROUND ANIMATIONS
@@ -199,6 +199,7 @@ export default function Destination() {
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
+                className="w-full max-w-7xl mx-auto"
             >
                 {/* Title */}
                 <motion.h5
